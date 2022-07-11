@@ -1,8 +1,8 @@
 git clone --bare https://github.com/Dale-Muccignat/dotfiles $HOME/.dotfiles
 rm ~/.config/i3/config
 /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout desktop
-sudo pacman -S zsh sshfs picom nitrogen fzf xorg-xset rofi ranger gnome gvim evince playerctl dunst flameshot polybar dex
-yay -S nerd-fonts-complete oh-my-zsh-git auto-cpufreq google-chrome vim-plug slack i3lock-fancy-rapid-git autotiling
+sudo pacman -S zsh sshfs nitrogen fzf xorg-xset rofi ranger gnome gvim evince playerctl dunst flameshot polybar dex powerline-fonts
+yay -S nerd-fonts-complete picom-ibhagwan-git oh-my-zsh-git auto-cpufreq google-chrome vim-plug slack i3lock-fancy-rapid-git autotiling la-capitaine-icon-theme
 chsh --shell /bin/zsh
 sudo systemctl enable --now auto-cpufreq.service
 git config --global core.excludesfile ~/.gitignore
